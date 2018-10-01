@@ -38,6 +38,8 @@ public class CharacterScroller : MonoBehaviour
     public Button lockButton;
     public Color lockColor = Color.black;
 
+    public Text suitID;
+
     List<GameObject> listCharacter = new List<GameObject>();
     public GameObject currentCharacter;
     GameObject lastCurrentCharacter;
@@ -245,7 +247,10 @@ public class CharacterScroller : MonoBehaviour
 
         // Update UI
         totalCoins.text = CoinManager.Instance.Coins.ToString();
+      
         Character charData = currentCharacter.GetComponent<Character>();
+        suitID.text = charData.characterSequenceNumber.ToString(); // Para ver el número
+
 
         if (!charData.isFree)
         {
