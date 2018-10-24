@@ -16524,8 +16524,7 @@ MonoBehaviour:
     type: 3}
   rollingRockPrefab: {fileID: 1814221490068356, guid: 0109640c0844a194fb14ba2bc0b6c339,
     type: 3}
-  pyramidPrefab: {fileID: 1148999694360718, guid: 522521212a69c0840bf224518189c47d,
-    type: 3}
+  pyramidPrefab: {fileID: 100000, guid: fe2a9a67829588f4493b4aee5ed5a55a, type: 3}
   rotatingWallPrefab: {fileID: 1486836369692160, guid: c36c1bc97cba30f4cb7a15f80e49e99c,
     type: 3}
   spindlePrefab: {fileID: 1646546707403710, guid: ebd8a3ecec85dbe4e9f160440480789a,
