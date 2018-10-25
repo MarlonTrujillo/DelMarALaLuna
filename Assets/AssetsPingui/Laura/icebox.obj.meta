@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: fe2a9a67829588f4493b4aee5ed5a55a
+guid: 82db0b133600e7647a8c481daa02d9a4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: el_astronauta
-    400000: //RootNode
-    400002: el_astronauta
-    2100000: el_astronautaMat
-    2300000: el_astronauta
-    3300000: el_astronauta
-    4300000: el_astronauta
+    100000: icebox
+    100002: //RootNode
+    400000: icebox
+    400002: //RootNode
+    2100000: palette
+    2300000: icebox
+    3300000: icebox
+    4300000: icebox
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: el_astronautaMat
-    second: {fileID: 2100000, guid: 29d2ae16329202c43a4c8b05bd250fec, type: 2}
+      name: palette
+    second: {fileID: 2100000, guid: 2fea71564721861489434b986cbde18a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -47,7 +47,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.08
+    globalScale: 0.079
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
