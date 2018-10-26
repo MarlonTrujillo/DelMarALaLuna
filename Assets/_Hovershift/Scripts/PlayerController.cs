@@ -287,7 +287,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         isFixedRotation = true;
-        transform.eulerAngles = Vector3.zero;
+        transform.eulerAngles = new Vector3 (0, 90, 0);
     }
 
 
