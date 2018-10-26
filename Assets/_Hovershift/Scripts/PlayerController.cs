@@ -228,7 +228,7 @@ public class PlayerController : MonoBehaviour
             if (inLaserMode)
             {
                 speed = maxSpeed;
-                sphereOrigin = transform.position + new Vector3(0, 0, 0f);
+                sphereOrigin = transform.position + new Vector3(0, 0f, 0f);
                 sphereDirection = transform.position;
 
                 if (Physics.SphereCast(sphereOrigin, GameManager.Instance.invincibleRadius, sphereDirection, out hit))
@@ -255,11 +255,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*private void OnDrawGizmosSelected() 
+    private void OnDrawGizmosSelected() 
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(sphereOrigin, GameManager.Instance.invincibleRadius);
-    }*/
+    }
 
     //Fix player rotation
     IEnumerator FixRotation()
