@@ -97,7 +97,7 @@ MonoBehaviour:
   characterSequenceNumber: 0
   characterName: PLAYER_10
   price: 1000
-  isFree: 0
+  isFree: 1
 --- !u!1 &1539032210936330
 GameObject:
   m_ObjectHideFlags: 0

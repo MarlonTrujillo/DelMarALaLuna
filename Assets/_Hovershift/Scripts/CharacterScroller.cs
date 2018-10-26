@@ -105,7 +105,7 @@ public class CharacterScroller : MonoBehaviour
         {
             int deltaIndex = i - currentCharacterIndex;
 
-            GameObject character = (GameObject)Instantiate(CharacterManager.Instance.characters[i], centerPoint, Quaternion.Euler(originalRotation.x, originalRotation.y, originalRotation.z));
+            GameObject character = (GameObject)Instantiate(CharacterManager.Instance.characters[i], centerPoint, Quaternion.Euler(originalRotation.x, originalRotation.y+180, originalRotation.z));
             Character charData = character.GetComponent<Character>();
             charData.characterSequenceNumber = i;
             listCharacter.Add(character);
@@ -249,7 +249,46 @@ public class CharacterScroller : MonoBehaviour
         totalCoins.text = CoinManager.Instance.Coins.ToString();
       
         Character charData = currentCharacter.GetComponent<Character>();
-        suitID.text = charData.characterSequenceNumber.ToString(); // Para ver el número
+
+        switch (charData.characterSequenceNumber)
+        {
+            case 0:
+                suitID.text = "Normal";
+                break;
+            case 1:
+                suitID.text = "Armor+";
+                break;
+            case 2:
+                suitID.text = "Magnet+";
+                break;
+            case 3:
+                suitID.text = "Invencible+";
+                break;
+            case 4:
+                suitID.text = "Armor++";
+                break;
+            case 5:
+                suitID.text = "Magnet++";
+                break;
+            case 6:
+                suitID.text = "Invencible++";
+                break;
+            case 7:
+                suitID.text = "Armor+++";
+                break;
+            case 8:
+                suitID.text = "Magnet+++";
+                break;
+            case 9:
+                suitID.text = "Invencible+++";
+                break;
+            case 10:
+                suitID.text = "Special zen";
+                break;
+            default:
+                suitID.text = "Por si las";
+                break;
+        }
 
 
         if (!charData.isFree)
