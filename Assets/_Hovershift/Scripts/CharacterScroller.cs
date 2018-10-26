@@ -105,7 +105,7 @@ public class CharacterScroller : MonoBehaviour
         {
             int deltaIndex = i - currentCharacterIndex;
 
-            GameObject character = (GameObject)Instantiate(CharacterManager.Instance.characters[i], centerPoint, Quaternion.Euler(originalRotation.x, originalRotation.y, originalRotation.z));
+            GameObject character = (GameObject)Instantiate(CharacterManager.Instance.characters[i], centerPoint, Quaternion.Euler(originalRotation.x, originalRotation.y+180, originalRotation.z));
             Character charData = character.GetComponent<Character>();
             charData.characterSequenceNumber = i;
             listCharacter.Add(character);
@@ -249,7 +249,46 @@ public class CharacterScroller : MonoBehaviour
         totalCoins.text = CoinManager.Instance.Coins.ToString();
       
         Character charData = currentCharacter.GetComponent<Character>();
-        suitID.text = charData.characterSequenceNumber.ToString(); // Para ver el número
+
+        switch (charData.characterSequenceNumber)
+        {
+            case 0:
+                suitID.text = "Es el primer traje construido Franklin para poder ir a la luna";
+                break;
+            case 1:
+                suitID.text = "Este traje tiene armadura resiste 1 golpe adicional";
+                break;
+            case 2:
+                suitID.text = "Este traje multiplica la probabilidad base de aparición del imán por 2";
+                break;
+            case 3:
+                suitID.text = "Este traje multiplica la probabilidad base de aparición de la invencibilidad por 2";
+                break;
+            case 4:
+                suitID.text = "Este traje tiene armadura resiste 2 golpes adicionales";
+                break;
+            case 5:
+                suitID.text = "Este traje multiplica la probabilidad base de aparición del imán por 3";
+                break;
+            case 6:
+                suitID.text = "Este traje multiplica la probabilidad base de aparición de la invencibilidad por 3";
+                break;
+            case 7:
+                suitID.text = "Este traje tiene armadura resiste 4 golpes adicionales";
+                break;
+            case 8:
+                suitID.text = "Este traje multiplica la probabilidad base de aparición del imán por 5";
+                break;
+            case 9:
+                suitID.text = "Este traje multiplica la probabilidad base de aparición de la invencibilidad por 5";
+                break;
+            case 10:
+                suitID.text = "Franklin logra alcanzar su máximo potencial tras un arduo entrenamiento, al desprenderse de los trajes multiplica la probabilidad del imán y la invencibilidad por 4, y le permite resistir 1 golpe más";
+                break;
+            default:
+                suitID.text = "Por si las";
+                break;
+        }
 
 
         if (!charData.isFree)

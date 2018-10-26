@@ -29,6 +29,7 @@ namespace SgLib
         public Sound unlock;
         public Sound item;
         public Sound objectExplore;
+        public Sound hit;
 
         public delegate void MusicStatusChangedHandler(bool isOn);
         public static event MusicStatusChangedHandler MusicStatusChanged;

@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
                     if (timeCount < turnAngle)
                     {
                         timeCount += rotateSpeed * Time.deltaTime;
-                        transform.eulerAngles = new Vector3(timeCount, transform.eulerAngles.y, transform.eulerAngles.z);
+                        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, timeCount);
                     }
                 }
             }
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
                     if (timeCount > -turnAngle)
                     {
                         timeCount -= rotateSpeed * Time.deltaTime;
-                        transform.eulerAngles = new Vector3(timeCount, transform.eulerAngles.y, transform.eulerAngles.z);
+                        transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, timeCount);
                     }
                 }
             }
@@ -169,7 +169,7 @@ public class PlayerController : MonoBehaviour
                         if (timeCount < turnAngle)
                         {
                             timeCount += rotateSpeed * Time.deltaTime;
-                            transform.eulerAngles = new Vector3(timeCount, transform.eulerAngles.y, transform.eulerAngles.z);
+                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, timeCount);
                         }
                     }
                 }
@@ -183,7 +183,7 @@ public class PlayerController : MonoBehaviour
                         if (timeCount > -turnAngle)
                         {
                             timeCount -= rotateSpeed * Time.deltaTime;
-                            transform.eulerAngles = new Vector3(timeCount, transform.eulerAngles.y, transform.eulerAngles.z);
+                            transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, timeCount);
                         }
                     }
                 }
@@ -228,7 +228,7 @@ public class PlayerController : MonoBehaviour
             if (inLaserMode)
             {
                 speed = maxSpeed;
-                sphereOrigin = transform.position + new Vector3(0, 0, 0f);
+                sphereOrigin = transform.position + new Vector3(0, 0f, 0f);
                 sphereDirection = transform.position;
 
                 if (Physics.SphereCast(sphereOrigin, GameManager.Instance.invincibleRadius, sphereDirection, out hit))
@@ -255,15 +255,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*private void OnDrawGizmosSelected() 
+    private void OnDrawGizmosSelected() 
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(sphereOrigin, GameManager.Instance.invincibleRadius);
-    }*/
+    }
 
     //Fix player rotation
     IEnumerator FixRotation()
     {
+        
         if (timeCount > 0)
         {
             while (timeCount > 0)
@@ -271,7 +272,7 @@ public class PlayerController : MonoBehaviour
                 if (stopFixRotation)
                     yield break;
                 timeCount -= rotateSpeed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(timeCount, transform.eulerAngles.y, transform.eulerAngles.z);
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, timeCount);
                 yield return null;
             }
         }
@@ -282,12 +283,13 @@ public class PlayerController : MonoBehaviour
                 if (stopFixRotation)
                     yield break;
                 timeCount += rotateSpeed * Time.deltaTime;
-                transform.eulerAngles = new Vector3(timeCount, transform.eulerAngles.y, transform.eulerAngles.z);
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, timeCount);
                 yield return null;
             }
         }
         isFixedRotation = true;
-        transform.eulerAngles = Vector3.zero;
+        transform.eulerAngles = new Vector3 (50, 90, 0);
+        //yield return null; // borrar cuando se descomente lo de arriba
     }
 
 
@@ -342,7 +344,9 @@ public class PlayerController : MonoBehaviour
                 // If player has 1 or more armor, armor will reduce
                 if (GameManager.Instance.armorUnits > 0)
                 {
-                    GameManager.Instance.armorUnits--; 
+                    GameManager.Instance.armorUnits--;
+                    cameraController.ShakeCamera();
+                    SoundManager.Instance.PlaySound(SoundManager.Instance.hit, true);
                 }
                 // if armor is 0 player dies
                 else

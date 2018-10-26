@@ -289,6 +289,11 @@ public class GameManager : MonoBehaviour
         // Add other game over actions here if necessary
     }
 
+    public void Hitted ()
+    {
+
+    }
+
     // Start a new game
     public void RestartGame(float delay = 0)
     {

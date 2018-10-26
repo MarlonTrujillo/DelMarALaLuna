@@ -6,5 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Hovershift/Scenes/Cinematic1.unity
+    guid: 285b96a7efafe6d4cb1659da88fa1b89
+  - enabled: 1
     path: Assets/_Hovershift/Scenes/Main.unity
-    guid: 00000000000000000000000000000000
+    guid: 7ced3701372d53c40a240979deb00914
+  m_configObjects: {}
