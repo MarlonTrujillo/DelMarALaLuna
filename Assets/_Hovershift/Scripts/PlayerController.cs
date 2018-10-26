@@ -342,7 +342,8 @@ public class PlayerController : MonoBehaviour
                 // If player has 1 or more armor, armor will reduce
                 if (GameManager.Instance.armorUnits > 0)
                 {
-                    GameManager.Instance.armorUnits--; 
+                    GameManager.Instance.armorUnits--;
+                    cameraController.ShakeCamera();
                 }
                 // if armor is 0 player dies
                 else
