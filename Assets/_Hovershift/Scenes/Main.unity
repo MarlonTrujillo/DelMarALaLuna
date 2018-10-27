@@ -15183,6 +15183,10 @@ PrefabInstance:
       propertyPath: trash.clip
       value: 
       objectReference: {fileID: 8300000, guid: 1afa7ef57669b694fa904eba5178f1ed, type: 3}
+    - target: {fileID: 11496382, guid: 393e1012855d44eb08111c95269092e0, type: 3}
+      propertyPath: gameOver.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fd75fc5d9ef102c46a7e3741c540103e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 393e1012855d44eb08111c95269092e0, type: 3}
 --- !u!1 &1672609930
@@ -16040,7 +16044,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HOVERSHIFT
+  m_Text: DEL MAR A LA LUNA
 --- !u!222 &1805835730
 CanvasRenderer:
   m_ObjectHideFlags: 0
