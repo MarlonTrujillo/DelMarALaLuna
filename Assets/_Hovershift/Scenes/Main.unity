@@ -7648,7 +7648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1330872878
 Transform:
   m_ObjectHideFlags: 0
@@ -7656,13 +7656,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330872877}
-  m_LocalRotation: {x: -0.5000001, y: -0.5000001, z: 0.4999999, w: 0.4999999}
-  m_LocalPosition: {x: 9.04, y: 0, z: 0}
+  m_LocalRotation: {x: -0.016605807, y: -0.9086349, z: 0.41719162, w: 0.0076244464}
+  m_LocalPosition: {x: 0.07, y: 7.63, z: 9.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 344953817}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -180, y: 89.99999, z: -90}
+  m_LocalEulerAnglesHint: {x: -229.279, y: 2.4349976, z: -176.789}
 --- !u!199 &1330872879
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -7681,7 +7681,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bcc57f98770b80343a4d36c2e675ed86, type: 2}
+  - {fileID: 2100000, guid: f60f22163667d10458a346dbedc59ac5, type: 2}
   - {fileID: 2100000, guid: e14d520254d50b9418cf5143412c9a59, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -7702,7 +7702,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 4
+  m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
@@ -7808,7 +7808,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -8496,7 +8496,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
     arc:
-      value: 360
+      value: 180
       mode: 0
       spread: 0
       speed:
@@ -8558,7 +8558,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 30
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14617,11 +14617,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4906313762447420, guid: c80a2ba51c8acf145945f2ec41852e19, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4906313762447420, guid: c80a2ba51c8acf145945f2ec41852e19, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.477
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 4906313762447420, guid: c80a2ba51c8acf145945f2ec41852e19, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14695,7 +14695,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1824035435735648, guid: c80a2ba51c8acf145945f2ec41852e19, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198106404056682612, guid: c80a2ba51c8acf145945f2ec41852e19,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80a2ba51c8acf145945f2ec41852e19, type: 3}
