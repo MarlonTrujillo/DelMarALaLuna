@@ -2015,7 +2015,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 2615efd4f1af6bd48a728b1651a5385c, type: 3}
+  m_Mesh: {fileID: 4300004, guid: 7c0c260d9c0e0e3438ddbb2d6cf7449d, type: 3}
 --- !u!114 &344953820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2056,7 +2056,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0fd371377937d58468f990e4a9fca593, type: 2}
+  - {fileID: 2100000, guid: 8726004b5f6ec644090d80914a6deb9a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15171,6 +15171,18 @@ PrefabInstance:
       propertyPath: hit.clip
       value: 
       objectReference: {fileID: 8300000, guid: c381d2adae25fb649b4b8145ee8e151b, type: 3}
+    - target: {fileID: 11496382, guid: 393e1012855d44eb08111c95269092e0, type: 3}
+      propertyPath: invincible.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 31224225e2ecba1488ab99a833381169, type: 3}
+    - target: {fileID: 11496382, guid: 393e1012855d44eb08111c95269092e0, type: 3}
+      propertyPath: magnet.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: beb68b1fb04bea24b93c45320a107874, type: 3}
+    - target: {fileID: 11496382, guid: 393e1012855d44eb08111c95269092e0, type: 3}
+      propertyPath: trash.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1afa7ef57669b694fa904eba5178f1ed, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 393e1012855d44eb08111c95269092e0, type: 3}
 --- !u!1 &1672609930

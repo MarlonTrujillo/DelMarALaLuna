@@ -22,7 +22,15 @@ public class ItemController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SoundManager.Instance.PlaySound(SoundManager.Instance.item);
+            // Sounds if item type
+            if (itemType == ItemType.COIN)
+                SoundManager.Instance.PlaySound(SoundManager.Instance.trash);
+            if (itemType == ItemType.LASER)
+                SoundManager.Instance.PlaySound(SoundManager.Instance.invincible);
+            if (itemType == ItemType.MAGNET)
+                SoundManager.Instance.PlaySound(SoundManager.Instance.magnet);
+
+
             GameManager.Instance.ItemExplore(other.transform.position);
             if (itemType == ItemType.COIN)
                 CoinManager.Instance.AddCoins(1);
