@@ -253,37 +253,37 @@ public class CharacterScroller : MonoBehaviour
         switch (charData.characterSequenceNumber)
         {
             case 0:
-                suitID.text = "Normal";
+                suitID.text = "Es el primer traje construido Franklin para poder ir a la luna";
                 break;
             case 1:
-                suitID.text = "Armor+";
+                suitID.text = "Este traje tiene armadura resiste 1 golpe adicional";
                 break;
             case 2:
-                suitID.text = "Magnet+";
+                suitID.text = "Este traje multiplica la probabilidad base de aparición del imán por 2";
                 break;
             case 3:
-                suitID.text = "Invencible+";
+                suitID.text = "Este traje multiplica la probabilidad base de aparición de la invencibilidad por 2";
                 break;
             case 4:
-                suitID.text = "Armor++";
+                suitID.text = "Este traje tiene armadura resiste 2 golpes adicionales";
                 break;
             case 5:
-                suitID.text = "Magnet++";
+                suitID.text = "Este traje multiplica la probabilidad base de aparición del imán por 3";
                 break;
             case 6:
-                suitID.text = "Invencible++";
+                suitID.text = "Este traje multiplica la probabilidad base de aparición de la invencibilidad por 3";
                 break;
             case 7:
-                suitID.text = "Armor+++";
+                suitID.text = "Este traje tiene armadura resiste 4 golpes adicionales";
                 break;
             case 8:
-                suitID.text = "Magnet+++";
+                suitID.text = "Este traje multiplica la probabilidad base de aparición del imán por 5";
                 break;
             case 9:
-                suitID.text = "Invencible+++";
+                suitID.text = "Este traje multiplica la probabilidad base de aparición de la invencibilidad por 5";
                 break;
             case 10:
-                suitID.text = "Special zen";
+                suitID.text = "Franklin logra alcanzar su máximo potencial tras un arduo entrenamiento, al desprenderse de los trajes multiplica la probabilidad del imán y la invencibilidad por 4, y le permite resistir 1 golpe más";
                 break;
             default:
                 suitID.text = "Por si las";
