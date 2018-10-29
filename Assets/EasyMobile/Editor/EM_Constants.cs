@@ -10,8 +10,8 @@ namespace EasyMobile.Editor
         public const string Copyright = "© 2017-2018 SgLib Games LLC. All Rights Reserved.";
 
         // Current version
-        public const string versionString = "1.1.0";
-        public const int versionInt = 0x01100;
+        public const string versionString = "2.0.0";
+        public const int versionInt = 0x020000;
 
         // Folder
         public const string RootPath = "Assets/EasyMobile";
@@ -29,8 +29,9 @@ namespace EasyMobile.Editor
         public const string PlayServicersResolverPackagePath = PackagesFolder + "/play-services-resolver.unitypackage";
 
         // URLs
-        public const string DocumentationURL = "https://sglibgames.gitbooks.io/easy-mobile-user-guide/content/";
-        public const string SupportEmail = "sglib.games@gmail.com";
+        public const string DocumentationURL = "https://easymobile.sglibgames.com/docs/lite/";
+        public const string SupportEmail = "support@sglibgames.com";
+        public const string SupportEmailSubject = "[EM Lite]";
 
         // ProjectSettings keys
         public const string PSK_EMVersionString = "VERSION";
