@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Hovershift/Scenes/Main.unity
     guid: 7ced3701372d53c40a240979deb00914
+  - enabled: 1
+    path: Assets/_Hovershift/Scenes/Cinematic2.unity
+    guid: bb2b7f783865a7f4986d33ef90371f29
   m_configObjects: {}
