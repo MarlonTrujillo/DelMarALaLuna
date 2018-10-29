@@ -9,4 +9,9 @@ public class Scenemanager : MonoBehaviour {
     {
         SceneManager.LoadScene("Main");
     }
+
+    public void playCinematic()
+    {
+        SceneManager.LoadScene("Cinematic2");
+    }
 }
