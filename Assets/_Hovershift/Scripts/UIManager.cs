@@ -218,7 +218,7 @@ public class UIManager : MonoBehaviour
         // Show these if premium features are enabled (and relevant conditions are met)
         if (IsPremiumFeaturesEnabled())
         {
-            ShowShareUI();
+            //ShowShareUI();
             ShowWatchForCoinsBtn();
         }
     }
