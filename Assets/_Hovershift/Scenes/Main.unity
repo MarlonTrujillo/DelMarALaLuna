@@ -3677,7 +3677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11424016, guid: 4f5f464b9799f4770b13d9a724263f7d, type: 3}
       propertyPath: rewardIntervalSeconds
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5f464b9799f4770b13d9a724263f7d, type: 3}
