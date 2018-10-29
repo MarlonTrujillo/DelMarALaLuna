@@ -16590,11 +16590,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enablePremiumFeatures: 1
   targetFrameRate: 60
-  firstPathNumber: 2
-  initialPath: 5
+  firstPathNumber: 5
+  initialPath: 10
   maxCoinPathNumber: 10
   minCoinPathNumber: 5
-  changeEnvironmentScore: 30
+  changeEnvironmentScore: 20
   minCheckingDistance: 30
   maxCheckingDistance: 40
   minObstacleHandlingTime: 0.8
@@ -16606,11 +16606,11 @@ MonoBehaviour:
   minSkyColorLerpTime: 20
   maxSkyColorLerpTime: 30
   skyColors:
-  - {r: 0.039916348, g: 0.2824715, b: 0.3679245, a: 1}
-  - {r: 0.039215688, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.039215688, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.039215688, g: 0.28235295, b: 0.36862746, a: 1}
-  - {r: 0.039215688, g: 0.28235295, b: 0.36862746, a: 1}
+  - {r: 0.14509805, g: 0.14117648, b: 0.3647059, a: 1}
+  - {r: 0.101960786, g: 0.3372549, b: 0.47058824, a: 1}
+  - {r: 0.08235294, g: 0.5647059, b: 0.5921569, a: 1}
+  - {r: 0.21960784, g: 0.6431373, b: 0.54901963, a: 1}
+  - {r: 0.2627451, g: 0.5529412, b: 0.7372549, a: 1}
   coinFrequency: 0.7
   coinPathFrequency: 0.4
   laserFrequency: 0
@@ -16654,15 +16654,15 @@ MonoBehaviour:
   playerExplore: {fileID: 2100000, guid: a335d0de72a9f004fad93ad77a584a42, type: 2}
   environments:
   - listLeftBG:
-    - {fileID: 1024041532445326, guid: 9f08212dad9e0a544a1c01b330c071e3, type: 3}
-    - {fileID: 1433797835669822, guid: d42fa77d54e7ba849831c34e6cff9182, type: 3}
-    - {fileID: 1959957843192406, guid: 948f61c30e605344189f09c28a21fc3d, type: 3}
-    - {fileID: 1118077627765142, guid: c23ad03e0fa23d841bfa871d7cc6c95a, type: 3}
+    - {fileID: 1134225899907450, guid: 13779951a3410da478191abe9b65ea0c, type: 3}
+    - {fileID: 1579306915538542, guid: e459aa835e31ea744b6bba9e6bde9c46, type: 3}
+    - {fileID: 1616801324711104, guid: 7fcec02fe7277c748902a2cf7c300cd1, type: 3}
+    - {fileID: 1047213479670086, guid: 414d85136b4568b4b9424b831488cdca, type: 3}
     listRightBG:
-    - {fileID: 1510384349975846, guid: a372f1023461d3942a9e1243043db2e7, type: 3}
-    - {fileID: 1231776556541766, guid: 9a3781f5e335ec743b93116e543836d8, type: 3}
-    - {fileID: 1544676823352272, guid: 4ed25df38602d2548bae60472666f623, type: 3}
-    - {fileID: 1849513724198988, guid: e00fd9bf5bbb8034d8ba32ca10daae9f, type: 3}
+    - {fileID: 1198478205985680, guid: 22451a14971a3ff4d83af165d752104c, type: 3}
+    - {fileID: 1706217282767900, guid: 181ec0066d2d0854181c20759c5f5bcc, type: 3}
+    - {fileID: 1200694100913300, guid: 1b15f943b92082b468ff14396fa228c4, type: 3}
+    - {fileID: 1339100322496010, guid: e3fd66e7c6c4d88489d2c0f3815b7f71, type: 3}
   - listLeftBG:
     - {fileID: 1360421779904604, guid: 7a4e9f611bbe3af48b39e4250dc71bd1, type: 3}
     - {fileID: 1290280410263744, guid: cd067c5c00d718e4285982d5b01becaa, type: 3}
@@ -16683,16 +16683,6 @@ MonoBehaviour:
     - {fileID: 1542775377444548, guid: 7b6a6d1891042974ca394bee6c729f3a, type: 3}
     - {fileID: 1211453988866540, guid: 70fdd1aa9056c8f489f0db5abc38df7d, type: 3}
     - {fileID: 1900390462501850, guid: 4ba97cc03e62b3e42a16b40e1e7cff0c, type: 3}
-  - listLeftBG:
-    - {fileID: 1134225899907450, guid: 13779951a3410da478191abe9b65ea0c, type: 3}
-    - {fileID: 1579306915538542, guid: e459aa835e31ea744b6bba9e6bde9c46, type: 3}
-    - {fileID: 1616801324711104, guid: 7fcec02fe7277c748902a2cf7c300cd1, type: 3}
-    - {fileID: 1047213479670086, guid: 414d85136b4568b4b9424b831488cdca, type: 3}
-    listRightBG:
-    - {fileID: 1198478205985680, guid: 22451a14971a3ff4d83af165d752104c, type: 3}
-    - {fileID: 1706217282767900, guid: 181ec0066d2d0854181c20759c5f5bcc, type: 3}
-    - {fileID: 1200694100913300, guid: 1b15f943b92082b468ff14396fa228c4, type: 3}
-    - {fileID: 1339100322496010, guid: e3fd66e7c6c4d88489d2c0f3815b7f71, type: 3}
 --- !u!4 &2085452388
 Transform:
   m_ObjectHideFlags: 0
