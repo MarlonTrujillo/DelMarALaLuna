@@ -145,7 +145,7 @@ public class UIManager : MonoBehaviour
 
         // Enable or disable premium stuff
         bool enablePremium = IsPremiumFeaturesEnabled();
-        leaderboardBtn.SetActive(enablePremium);
+        //leaderboardBtn.SetActive(enablePremium);
         iapPurchaseBtn.SetActive(enablePremium);
         removeAdsBtn.SetActive(enablePremium);
         restorePurchaseBtn.SetActive(enablePremium);
