@@ -17,7 +17,7 @@ namespace EasyMobile.Editor
             EM_PluginManager.ImportPlayServicesResolver(true);
         }
 
-        [MenuItem("Window/" + EM_Constants.ProductName + "/Documentation", false, 5)]
+        [MenuItem("Window/" + EM_Constants.ProductName + "/User Guide", false, 5)]
         public static void OpenDocumentation()
         {
             Application.OpenURL(EM_Constants.DocumentationURL);

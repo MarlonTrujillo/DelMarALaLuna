@@ -244,6 +244,8 @@ public class GameManager : MonoBehaviour
         rollingObstacleSize = rollingRockPrefab.GetComponent<Renderer>().bounds.size;
 
         InitialObject();//Instantiate objects for pooling
+
+        // ESTE ES CÓMO SE ESCOGE LOS FONDOS
         environmentIndex = Random.Range(0, listEnvironment.Count);
 
         //Create environment

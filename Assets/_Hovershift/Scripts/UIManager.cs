@@ -33,7 +33,8 @@ public class UIManager : MonoBehaviour
     public GameObject musicOffBtn;
     public Image laserModeImg;
     public Image magnetModeImg;
-    public Text armorPoints; // Para mostrar armadura en debug
+    public Text debugPoints; // Para mostrar armadura en debug
+    public Text armorPoints;
 
     [Header("Premium Features Buttons")]
     public GameObject watchRewardedAdBtn;
@@ -84,7 +85,8 @@ public class UIManager : MonoBehaviour
         score.text = ScoreManager.Instance.Score.ToString();
         bestScore.text = ScoreManager.Instance.HighScore.ToString();
         coinText.text = CoinManager.Instance.Coins.ToString();
-        armorPoints.text = "*TEST* Armor: " + GameManager.Instance.armorUnits.ToString() + ". | Magnet: " + GameManager.Instance.magnetFrequency.ToString() + ". | Invincible: " + GameManager.Instance.laserFrequency.ToString();
+        debugPoints.text = "*TEST* Armor: " + GameManager.Instance.armorUnits.ToString() + ". | Magnet: " + GameManager.Instance.magnetFrequency.ToString() + ". | Invincible: " + GameManager.Instance.laserFrequency.ToString();
+        armorPoints.text = GameManager.Instance.armorUnits.ToString();
 
         if (!DailyRewardController.Instance.disable && dailyRewardBtn.gameObject.activeInHierarchy)
         {
@@ -143,7 +145,7 @@ public class UIManager : MonoBehaviour
 
         // Enable or disable premium stuff
         bool enablePremium = IsPremiumFeaturesEnabled();
-        leaderboardBtn.SetActive(enablePremium);
+        //leaderboardBtn.SetActive(enablePremium);
         iapPurchaseBtn.SetActive(enablePremium);
         removeAdsBtn.SetActive(enablePremium);
         restorePurchaseBtn.SetActive(enablePremium);
@@ -216,7 +218,7 @@ public class UIManager : MonoBehaviour
         // Show these if premium features are enabled (and relevant conditions are met)
         if (IsPremiumFeaturesEnabled())
         {
-            ShowShareUI();
+            //ShowShareUI();
             ShowWatchForCoinsBtn();
         }
     }

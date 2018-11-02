@@ -30,6 +30,9 @@ namespace SgLib
         public Sound item;
         public Sound objectExplore;
         public Sound hit;
+        public Sound trash;
+        public Sound magnet;
+        public Sound invincible;
 
         public delegate void MusicStatusChangedHandler(bool isOn);
         public static event MusicStatusChangedHandler MusicStatusChanged;

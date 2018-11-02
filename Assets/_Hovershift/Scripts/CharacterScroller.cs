@@ -283,7 +283,7 @@ public class CharacterScroller : MonoBehaviour
                 suitID.text = "Este traje multiplica la probabilidad base de aparición de la invencibilidad por 5";
                 break;
             case 10:
-                suitID.text = "Franklin logra alcanzar su máximo potencial tras un arduo entrenamiento, al desprenderse de los trajes multiplica la probabilidad del imán y la invencibilidad por 4, y le permite resistir 1 golpe más";
+                suitID.text = "Franklin logra alcanzar su máximo potencial tras un arduo entrenamiento, y ahora al desnudo canaliza su energia interna para multiplicar la probabilidad del imán y la invencibilidad por 4, y le permite resistir 1 golpe más";
                 break;
             default:
                 suitID.text = "Por si las";
