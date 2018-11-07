@@ -1,22 +1,17 @@
 fileFormatVersion: 2
-guid: 66c6d052237840748a231c2f77fd0ec4
+guid: 18d4b7e9c43f5594e90659fd66fcf087
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Coral_azul
-    400000: //RootNode
-    400002: Coral_azul
-    2100000: Coral_azulMat
-    2300000: Coral_azul
-    3300000: Coral_azul
-    4300000: Coral_azul
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Coral_azulMat
-    second: {fileID: 2100000, guid: 22e7a840570d1d24bb6be1a0f9ceb44f, type: 2}
+    100000: concha1
+    100002: //RootNode
+    400000: concha1
+    400002: //RootNode
+    2100000: palette
+    2300000: concha1
+    3300000: concha1
+    4300000: concha1
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -47,7 +42,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.05
+    globalScale: 0.15
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
